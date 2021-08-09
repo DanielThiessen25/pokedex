@@ -20,7 +20,7 @@ export default function Login() {
     function submit(event) {
         event.preventDefault();
 
-        axios.post(`https://backpokedex.herokuapp.com/sign-in`, {
+        axios.post(`https://backpokedex.herokuapp.com/login`, {
             email,
             password
         }).then(res => {
